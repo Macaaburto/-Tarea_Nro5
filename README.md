@@ -8,3 +8,23 @@ R:  Lo extraño del tag "img" es que no cierra,  dado que existen ciertos tag  q
 R: Para realizarlo, se procede a:
 - instalar: install.packages(rvest),para descargarla"
 - usar la library("rvest")
+
+# inicializando la variable archivo con el nombre de mi pÃ¡gina
+archivo <- 'PagWeb.html'
+
+# Leyendo el HTML del archivo
+webpage <- read_html(archivo)
+
+##########################################################
+############# ExtracciÃ³n del texto noticia ###############
+##########################################################
+
+# Extrayendo contenido en la clase justificado
+contenidojumbo <- html_nodes(webpage,'p')
+
+# Pasando la info a texto
+textojumbo <- html_text(contenidojumbo)
+
+# Viendo a priori la info en la variable textoNoticia
+print(textojumbo)
+
