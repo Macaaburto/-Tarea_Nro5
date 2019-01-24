@@ -45,4 +45,12 @@ R: Para ser desarrollada se realiza lo sieguiente:
 
 #Viendo el contenido de la posicion 1,2 de la tabla1 print(tabla1[1,2])
 
-y en el archivo RStudio se encontrara una serie de comandos más para desarrollar este punto.
+tabla2<-html_table(contenedorDeTablas [2][[1]])
+
+#Viendo el contenido de la posicion 2,2 de la tabla2 print(tabla2[2,2])
+
+#Limpiando $ comas y cambios de puntos por coma tabla1$Precio <- gsub("\$","",tabla1$Precio) tabla1$Precio <- gsub("[.]","",tabla1$Precio) tabla1$Precio <- as.numeric(gsub(",",".",tabla1$Precio))
+
+tabla2$Precio <- gsub("\$","",tabla2$Precio) tabla2$Precio <- gsub("[.]","",tabla2$Precio) tabla2$Precio <- as.numeric(gsub(",",".",tabla2$Precio))
+
+#Combinando los dos data frames y creando un tercer data frame tablaMerge <- rbind(tabla1,tabla2)
