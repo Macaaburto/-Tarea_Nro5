@@ -44,3 +44,5 @@ R: Para ser desarrollada se realiza lo sieguiente:
 #Extraccion informacion tabla 1 tabla1<-html_table(contenedorDeTablas[1][[1]])
 
 #Viendo el contenido de la posicion 1,2 de la tabla1 print(tabla1[1,2])
+
+y en el archivo RStudio se encontrara una serie de comandos más para desarrollar este punto.
